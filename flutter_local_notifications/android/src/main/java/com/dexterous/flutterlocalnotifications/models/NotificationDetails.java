@@ -114,7 +114,7 @@ public class NotificationDetails implements Serializable {
     private static final String SCHEDULED_NOTIFICATION_REPEAT_FREQUENCY = "scheduledNotificationRepeatFrequency";
     private static final String MATCH_DATE_TIME_COMPONENTS = "matchDateTimeComponents";
 
-    private static final String FULL_SCREEN_INTENT = "fullScreenIntent";
+//    private static final String FULL_SCREEN_INTENT = "fullScreenIntent";
     private static final String SHORTCUT_ID = "shortcutId";
     private static final String SUB_TEXT = "subText";
 
@@ -173,7 +173,7 @@ public class NotificationDetails implements Serializable {
     public ScheduledNotificationRepeatFrequency scheduledNotificationRepeatFrequency;
     public DateTimeComponents matchDateTimeComponents;
     public Long when;
-    public Boolean fullScreenIntent;
+//    public Boolean fullScreenIntent;
     public String shortcutId;
     public String subText;
     public String tag;
@@ -247,7 +247,7 @@ public class NotificationDetails implements Serializable {
             notificationDetails.allowWhileIdle = (Boolean) platformChannelSpecifics.get(ALLOW_WHILE_IDLE);
             notificationDetails.timeoutAfter = parseLong(platformChannelSpecifics.get(TIMEOUT_AFTER));
             notificationDetails.category = (String) platformChannelSpecifics.get(CATEGORY);
-            notificationDetails.fullScreenIntent = (Boolean) platformChannelSpecifics.get((FULL_SCREEN_INTENT));
+//            notificationDetails.fullScreenIntent = (Boolean) platformChannelSpecifics.get((FULL_SCREEN_INTENT));
             notificationDetails.shortcutId = (String) platformChannelSpecifics.get(SHORTCUT_ID);
             notificationDetails.additionalFlags = (int[]) platformChannelSpecifics.get(ADDITIONAL_FLAGS);
             notificationDetails.subText = (String) platformChannelSpecifics.get(SUB_TEXT);
